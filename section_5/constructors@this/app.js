@@ -3,9 +3,32 @@ const personOne = {
    name: 'Vincent',
    age: 6
 }
-
 console.log(personOne);
 console.log(personOne.age);
+
+
+
+
+
+// Basic Constructor
+/*function Person() {
+  this.name = 'Derek';
+}
+// Instantiate a person object from above
+const derek = new Person();
+console.log(derek);
+console.log(john);*/
+
+// Another example of a basic constructor
+/*function Person(name) {
+  this.name = name;
+}
+// Instantiate a person object from above
+const derek = new Person('Vincent');
+console.log(derek);*/
+
+
+
 
 
 
