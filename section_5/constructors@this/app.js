@@ -19,12 +19,14 @@ const derek = new Person();
 console.log(derek);
 console.log(john);*/
 
+
 // Another example of a basic constructor
-/*function Person(name) {
+/*function Person(name, age) {
   this.name = name;
+  this.age = age;
 }
-// Instantiate a person object from above
-const derek = new Person('Vincent');
+// Instantiate a person object from above - new is part of the constructor
+const derek = new Person('Vincent', 6);
 console.log(derek);*/
 
 
