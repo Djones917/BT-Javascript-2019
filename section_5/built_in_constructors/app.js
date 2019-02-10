@@ -30,3 +30,24 @@ console.log(num2); // print object
 const bool1 = true;
 const bool2 = new Boolean(true); // object
 console.log(bool2); // print object
+
+
+
+// Function
+const getSum1 = function(x,y) {
+    return x + y;
+}
+
+const getSum2 = new Function('x', 'y', 'return 1 + 1'); 
+    
+console.log(getSum1(1,1));
+
+
+
+// Object
+const john1 = {name: "John"};
+const john2 = new Object({name: "John"}); // object
+console.log(john2); // Prints object
+
+
+
