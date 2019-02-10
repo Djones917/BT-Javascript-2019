@@ -53,7 +53,11 @@ console.log(john2); // Prints object
 
 // Arrays
 const arr1 = [1,2,3,4];
-const arr2 = new Array(1,2,3,4); // Object
-console.log(arr2); // Prints object
+const arr2 = new Array(1,2,3,4); 
+console.log(arr2); 
 
 
+// Regular expression
+const reg1 = /|w+/;
+const reg2 = new RegExp('\\w+');
+console.log(reg2);
