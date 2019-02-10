@@ -51,3 +51,9 @@ console.log(john2); // Prints object
 
 
 
+// Arrays
+const arr1 = [1,2,3,4];
+const arr2 = new Array(1,2,3,4); // Object
+console.log(arr2); // Prints object
+
+
