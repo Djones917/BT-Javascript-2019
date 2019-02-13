@@ -23,10 +23,17 @@ Person.prototype.calculateAge = function () {
     return Math.abs(ageDate.getUTCFullYear() - 1970);
 }
 
-// Lets build another prototype with name
+// Lets build another prototype with for fullname
 Person.prototype.getFullName = function() {
     return `${this.firstname} ${this.lastname}`;
 }
+
+// Gets Married
+Person.prototype.getsMarried = function(newlastname) {
+    this.lastname = newlastname;
+}
+
+
 
 // __prototype__ object and person
 // instantiate instance
@@ -39,4 +46,10 @@ console.log(mary);
 console.log(john.calculateAge()); 
 
 // Lets call get full name
+console.log(mary.getFullName());
+
+// Use gets married
+mary.getsMarried('Smith');
+
+// Lets call new full name
 console.log(mary.getFullName());
