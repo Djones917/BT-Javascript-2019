@@ -53,3 +53,8 @@ mary.getsMarried('Smith');
 
 // Lets call new full name
 console.log(mary.getFullName());
+
+
+// Now lets look at object property
+console.log(mary.hasOwnProperty('firstname')); // true
+console.log(mary.hasOwnProperty(getFullName)); // false because it's not part of the property
