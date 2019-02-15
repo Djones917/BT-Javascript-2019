@@ -14,4 +14,12 @@ Person.prototype.greeting = function() {
 
 const person1 = new Person('John', 'Doe');
 
-console.log(person1.greeting());
+//console.log(person1.greeting());
+
+
+
+
+// Customer Constructor
+function Customer(firstName, lastName, phone, membership) {
+
+}
