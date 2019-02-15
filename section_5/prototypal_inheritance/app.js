@@ -21,5 +21,9 @@ const person1 = new Person('John', 'Doe');
 
 // Customer Constructor
 function Customer(firstName, lastName, phone, membership) {
+   // Call is a function that allows us to call another function calls it from above!!!
+   Person.call(this, firstName, lastName);
+   this.phone = phone;
+   this.membership = membership;
 
 }
