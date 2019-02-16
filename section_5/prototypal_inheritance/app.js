@@ -25,5 +25,9 @@ function Customer(firstName, lastName, phone, membership) {
    Person.call(this, firstName, lastName);
    this.phone = phone;
    this.membership = membership;
-
 }
+
+//  Create Customer
+const customer1 = new Customer('Tom', 'Smith', '555-555-5555', 'Standard' );
+
+console.log(customer1);
