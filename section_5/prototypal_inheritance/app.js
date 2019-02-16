@@ -34,3 +34,5 @@ Customer.prototype = Object.create(Person.prototype);
 const customer1 = new Customer('Tom', 'Smith', '555-555-5555', 'Standard' );
 
 console.log(customer1);
+
+console.log(customer1.greeting());
