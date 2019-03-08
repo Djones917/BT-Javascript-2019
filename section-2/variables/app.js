@@ -18,6 +18,18 @@ console.log(greeting);
 
 
 // Multi word variables - camel case
-var firstName = 'John'; 
-var first_name = 'Sarah'; // Underscore - you will see this most likely in php
-var FirstName = 'Bob'; // Pascal Case - it's the same as camel case except the first letter is capitalized
+// var firstName = 'John'; 
+// var first_name = 'Sarah'; // Underscore - you will see this most likely in php
+// var FirstName = 'Bob'; // Pascal Case - it's the same as camel case except the first letter is capitalized
+// var firstname;
+
+
+// Let
+// let name;
+// name = 'John Doe';
+// console.log(name);
+// name = 'David Smith';
+// console.log(name);
+
+
+
