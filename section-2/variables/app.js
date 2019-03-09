@@ -32,4 +32,33 @@ console.log(greeting);
 // console.log(name);
 
 
+// Const
+//const name = 'John';
+//console.log(name);
+// YOU CAN'T REASSIGN A VALUE WITH CONST
+//name = 'Danny';
+//console.log(name);
+// YOU HAVE TO GIVE CONST A VALUE
+// const greeting;
+
+
+// You can't reassign with const because it's set but you can still update!
+const person = {
+    name: 'John',
+    age: 30
+}
+
+person.name = 'David Smith';
+person.age = 45;
+
+
+console.log(person);
+console.log(age);
+
+// It's the same with arrays
+const numbers = [1,2,3,4,5];
+numbers.push(6);
+// You can't reassing with const
+// numbers = [1,2,3,4,5,6]l
+console.log(numbers);
 
