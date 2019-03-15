@@ -16,11 +16,9 @@ val = String(new Date());
 val = String([1,2,3,4]);
 
 
-
 // toString() method another way to convert things to a string!!!
 val = (5).toString();
 val = (true).toString();
-
 
 
 // Output
@@ -29,3 +27,23 @@ console.log(typeof val);
 console.log(val.length); // This will kick back undefined length only works on a string
 
 
+
+
+
+
+
+// Sting to number
+let val1;
+val1 = Number('5');
+// val1 = Number(true); This will return 1
+// val1 = Number(false); This will return 0
+// val1 = Number(null); This will return 0
+// val1 = Number('Hello'); This will return NaN - not a number!
+// val1 = Number([1,2,3,4]); This will return NaN - not a number!
+
+
+
+console.log(val1);
+console.log(typeof val1);
+console.log(val.toFixed()); // For numbers only to specify decimal places
+// console.log(val.toFixed(2)); this would give you 5.00
