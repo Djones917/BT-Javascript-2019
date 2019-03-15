@@ -1,5 +1,6 @@
 //console.log('Connected');
 
+// Converting to a string
 let val;
 
 // Number to string
@@ -16,8 +17,9 @@ val = String([1,2,3,4]);
 
 
 
-// toString() method
-
+// toString() method another way to convert things to a string!!!
+val = (5).toString();
+val = (true).toString();
 
 
 
