@@ -48,3 +48,14 @@ console.log(val1);
 console.log(typeof val1);
 console.log(val.toFixed()); // For numbers only to specify decimal places
 // console.log(val.toFixed(2)); this would give you 5.00
+
+
+
+// type corrosion
+const val2 = String(5);
+//const val2 = 5;
+const val3 = 6;
+const sum = val2 + val3;
+
+console.log(sum); // This would return 56 as one is a string the other is a number so the Javascript enging concatenated it to make 56 a string!
+console.log(typeof sum);
