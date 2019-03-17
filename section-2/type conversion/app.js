@@ -59,3 +59,5 @@ const sum = val2 + val3;
 
 console.log(sum); // This would return 56 as one is a string the other is a number so the Javascript enging concatenated it to make 56 a string!
 console.log(typeof sum);
+
+
