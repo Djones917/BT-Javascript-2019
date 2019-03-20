@@ -1,6 +1,7 @@
 const firstName = 'William';
 const lastName = 'Johnson';
 const age = 40;
+const str = 'Hello there my name is Derek';
 
 let val;
 
@@ -43,6 +44,21 @@ val = firstName.lastIndexOf('2');
 val = firstName.charAt('2');
 // Get last character
 val = firstName.charAt(firstName.length -1);
+
+// substring()
+val = firstName.substring(0, 4); // this will return Will
+
+// slice()
+val = firstName.slice(0, 4); // usually used on arrays
+// val = firstName.slice(-3); this will start from the back of the name
+
+// split() 
+val = str.split(' ');
+
+
+// replace()
+val = str.replace('Derek', 'Kimberly');
+
 
 
 
