@@ -33,8 +33,17 @@ val = firstName.toLowerCase();
 // Not very useful but good to know
 val = firstName[0];
 
-// indexOf()
+// indexOf() remember -1 means character is not there!
 val =firstName.indexOf('2');
 val = firstName.lastIndexOf('2');
+
+
+
+// charAr()
+val = firstName.charAt('2');
+// Get last character
+val = firstName.charAt(firstName.length -1);
+
+
 
 console.log(val);
