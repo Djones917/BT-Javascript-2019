@@ -17,7 +17,7 @@ val += 'Jones';
 val = 'Hello, my name is ' + firstName + ' and I am ' + age;
 
 // Escaping - you could use double quotes but back splash is better
-val = 'That\'s awesome, I can\'t wait!;
+val = 'That\'s awesome, I can\'t wait!';
 
 // Length
 val = firstName.length;
@@ -59,7 +59,8 @@ val = str.split(' ');
 // replace()
 val = str.replace('Derek', 'Kimberly');
 
-
+// includes()
+val = str.includes('Hello');
 
 
 console.log(val);
