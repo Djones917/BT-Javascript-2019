@@ -21,6 +21,9 @@ val = Array.isArray(numbers);
 val = numbers[3];
 // Insert into array
 numbers[2] = 100;
+// Find index value
+val = numbers.indexOf(36);
+
 
 
 console.log(numbers);
