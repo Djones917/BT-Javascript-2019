@@ -24,6 +24,17 @@ numbers[2] = 100;
 // Find index value
 val = numbers.indexOf(36);
 
+// Mutating arrays
+// Add on to end
+numbers.push(250);
+// Add on to front
+numbers.unshift(120);
+// Take off from end
+numbers.pop();
+// Take off from front
+numbers.shift();
+
+
 
 
 console.log(numbers);
