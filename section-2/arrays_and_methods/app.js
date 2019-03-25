@@ -33,7 +33,35 @@ numbers.unshift(120);
 numbers.pop();
 // Take off from front
 numbers.shift();
+// Splice values
+numbers.splice(1,1);
+// Reverse
+numbers.reverse();
 
+
+// Concatenate
+val = numbers.concat(numbers2);
+
+// Sorting arrays
+val = fruit.sort();
+// val = numbers.sort();   EXAMPLE: WILL RETURN SOMETHING LIKE THIS 102, 21, 30, 49, 55 IT'S KIND OF SORTING 1,2,3,4,5 BUT IT'S NOT DOING FROM LOWEST TO HIGHEST VALUE!
+// SO USE THIS TO SORT NUMBERS
+// USE THE COMPARE FUNCTION
+//val = numbers.sort(function(x,y) {
+//   return x - y;
+//});
+// Reverse sort
+//val = numbers.sort(function(x,y) {
+//   return y - x;
+//});
+
+
+// FIND
+function under50(num){
+   return num < 50;
+}
+
+val = numbers.find(under50);
 
 
 
