@@ -10,7 +10,8 @@ const person = {
         state: 'FL'
     },
     getBirthYear: function() {
-        return 1987;
+       // return 1987;
+       return 2019 - this.age;
     }
 }
 
@@ -34,3 +35,21 @@ val = person.getBirthYear();
 
 
 console.log(val);
+
+
+
+
+
+
+
+const people = [
+    {Name: 'John', Age: 30},
+    {Name: 'Mike', Age: 23}
+];
+
+
+for(let i = 0; i < people.length; i++) {
+    console.log(people[i].name); 
+}
+
+
