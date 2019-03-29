@@ -11,10 +11,22 @@ val = today.getMonth(); // Months are zero based January = 0
 val = today.getDate();
 // Get day - Sunday, Monday, Tuesday ect zero based!
 val = today.getDay();
-
 val = today.getFullYear();
-
 val = today.getHours();
+val = today.getMinutes();
+val = today.getSeconds();
+val = today.getMilliseconds();
+// Get today's time stamp
+val = today.getTime();
+
+// Set month
+birthday.setMonth(2);
+birthday.setDate(12);
+birthday.setFullYear(1985);
+birthday.setHours(3);
+birthday.setMinutes(30);
+birthday.setSeconds(25);
+
 
 
 
