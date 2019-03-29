@@ -9,6 +9,14 @@ let birthday = new Date('9-10-81 11:25:00'); // The 11:25:00 is the time and you
 val = today.getMonth(); // Months are zero based January = 0
 // Get the day of the month
 val = today.getDate();
+// Get day - Sunday, Monday, Tuesday ect zero based!
+val = today.getDay();
+
+val = today.getFullYear();
+
+val = today.getHours();
+
+
 
 // If you add typeof you will get an object but this will give today's date!
 console.log(val);
