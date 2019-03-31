@@ -39,3 +39,13 @@ if (id === 100) {
 
 
 
+// Not equal to Value and Type NOTE: MOST OF THE TIME THIS IS BETTER AS IT PREVENTS ERRORS LATER ON!
+if (id !== 100) {
+    console.log('Correct!');
+} else {
+    console.log('Incorrect!');
+}
+
+
+
+
