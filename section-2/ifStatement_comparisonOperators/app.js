@@ -69,6 +69,14 @@
 
 
 
+// GREATER OR LESS THAN NOTE: > < >= <=
+if(id > 200) {
+  console.log('Correct');
+} else {
+  console.log('Incorrect');
+}
+
+
 
 
 
