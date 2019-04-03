@@ -1,3 +1,5 @@
+ // NOTE: IF STATEMENTS DON'T NEED BRACES {} BUT THEY ARE RECOMMENDED!!!! 
+ 
  //   if(something) {
  //   do something
  //   } else {
@@ -80,7 +82,6 @@
 
 
 // IF ELSE
-
 const color = 'red';
 
 //if(color === 'red') {
@@ -96,8 +97,7 @@ const color = 'red';
 
 
 
-// LOGICAL OPERATORS
-
+// LOGICAL OPERATORS NOTE: AND && both sides need to be true
 const name = 'Steve';
 const age = 20;
 
@@ -110,14 +110,15 @@ if(age > 0 && age < 12) {
 }
 
 
+// OR ||
+if(age < 16 || age > 65) {
+  console.log(`${name} can not run in the race!`);
+} else {
+  console.log(`${name} is registered for the race!`);
+}
 
 
-
-
-
-
-
-
-
+// Ternary Operator - Shorthand for conditionals Ternary operator is ? else is :
+console.log(id === 100 ? 'Correct' : 'Not Correct');
 
 
