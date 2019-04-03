@@ -70,11 +70,33 @@
 
 
 // GREATER OR LESS THAN NOTE: > < >= <=
-if(id > 200) {
-  console.log('Correct');
+//if(id > 200) {
+//  console.log('Correct');
+//} else {
+//  console.log('Incorrect');
+//}
+
+
+
+
+
+// IF ELSE
+const color = 'red';
+
+
+if(color === 'red') {
+  console.log('Color is red');
+} else if(color === 'blue') {
+  console.log('Color is blue');
 } else {
-  console.log('Incorrect');
+  console.log('Color is not red or blue');
 }
+
+
+
+
+
+
 
 
 
