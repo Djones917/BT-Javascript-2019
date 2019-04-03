@@ -79,18 +79,37 @@
 
 
 
-
 // IF ELSE
+
 const color = 'red';
 
+//if(color === 'red') {
+//  console.log('Color is red');
+//} else if(color === 'blue') {
+//  console.log('Color is blue');
+//} else {
+//  console.log('Color is not red or blue');
+//}
 
-if(color === 'red') {
-  console.log('Color is red');
-} else if(color === 'blue') {
-  console.log('Color is blue');
+
+
+
+
+
+// LOGICAL OPERATORS
+
+const name = 'Steve';
+const age = 20;
+
+if(age > 0 && age < 12) {
+  console.log(`${name} is a child`);
+} else if(age >= 13 && age <= 19) {
+  console.log(`${name} is a teenager`);
 } else {
-  console.log('Color is not red or blue');
+  console.log(`{name} is an adult`);
 }
+
+
 
 
 
