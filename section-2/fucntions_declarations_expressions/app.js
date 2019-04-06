@@ -51,4 +51,12 @@ const square = function(x) {
 
 
 // IMMEDIATELY ENVOKEABLE FUNCTION EXPRESSIONS - IIFEs
+// This won't run 
+//(function() {
+//   console.log('IIFE Ran!');
+//})
 
+// NOTE: You have to add (); to the end for it to run!
+(function () {
+   console.log('IIFE Ran!');
+})();
