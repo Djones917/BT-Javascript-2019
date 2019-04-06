@@ -14,6 +14,10 @@
 //   console.log('Number '+ i);
 // }
 
+
+
+
+
 // WHILE LOOP
 
 // let i = 0;
@@ -22,6 +26,10 @@
 //   console.log('Number ' + i);
 //   i++;
 // }
+
+
+
+
 
 // DO WHILE
 
@@ -34,6 +42,11 @@
 
 // while(i < 10);
 
+
+
+
+
+
 // LOOP THROUGH ARRAY
 const cars = ['Ford', 'Chevy', 'Honda', 'Toyota'];
 
@@ -41,11 +54,21 @@ const cars = ['Ford', 'Chevy', 'Honda', 'Toyota'];
 //   console.log(cars[i]);
 // }
 
+
+
+
+
+
 // FOREACH
 // cars.forEach(function(car, index, array){
 //   console.log(`${index} : ${car}`);
 //   console.log(array);
 // });
+
+
+
+
+
 
 // MAP
 // const users  = [
@@ -60,6 +83,11 @@ const cars = ['Ford', 'Chevy', 'Honda', 'Toyota'];
 // });
 
 // console.log(ids);
+
+
+
+
+
 
 
 // FOR IN LOOP
