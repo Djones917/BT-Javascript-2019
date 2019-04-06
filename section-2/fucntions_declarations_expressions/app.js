@@ -50,13 +50,48 @@ const square = function(x) {
 
 
 
-// IMMEDIATELY ENVOKEABLE FUNCTION EXPRESSIONS - IIFEs
+// IMMEDIATELY ENVOKEABLE FUNCTION EXPRESSIONS - IIFEs - Used with the moduler pattern - sounds like a fun pattern!
 // This won't run 
 //(function() {
 //   console.log('IIFE Ran!');
 //})
 
 // NOTE: You have to add (); to the end for it to run!
-(function () {
-   console.log('IIFE Ran!');
-})();
+//(function () {
+//   console.log('IIFE Ran!');
+//})();
+
+// Can also take paratmeters
+//(function (name) {
+//   console.log('Hello ' + name);
+//})('Derek');
+
+
+
+
+
+
+
+
+
+
+// Property Methods - A Methdod is just a function in and object
+
+const todo = {
+   add: function() {
+      console.log('Add todo');
+   },
+   edti: function() {
+      console.log(`Edit todo ${id}`);
+   }
+}
+
+
+// You can define a function outside of the object too! NOTE: I believe this is referring to prototypes!
+//todo.delete = function() {
+//   console.log('Delete todo...');
+//}
+
+todo.add();
+todo.edti();
+//todo.delete();
