@@ -13,16 +13,16 @@
 
 
 // Prompt
-//const input = prompt();
-//alert(input);
+// const input = prompt();
+// alert(input);
 
 
 // Confirm - often used when deleting something
-//if(confirm('Are you sure?')) {
+// if(confirm('Are you sure?')) {
 //  console.log('Yes');
-//} else {
+// } else {
 //   console.log('NO'); 
-//}
+// }
 
 
 
@@ -48,6 +48,23 @@ val = window.location.hostname;
 val = window.location.port;
 val = window.location.href;
 val = window.location.search;
+
+
+// Redirect
+//window.location.href = 'http://google.com';
+// Reload
+//window.location.reload();
+
+
+
+// History Object
+// window.history.go(-1);
+// val = window.history.length;
+
+
+// Navagator Object - This works with the actual browswer Chrome, Firefox ect.
+val - window.navigator;
+
 
 
 
