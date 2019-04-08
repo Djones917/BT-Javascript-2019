@@ -63,8 +63,13 @@ val = window.location.search;
 
 
 // Navagator Object - This works with the actual browswer Chrome, Firefox ect.
-val - window.navigator;
-
+val = window.navigator;
+val = window.navigator.appName;
+val = window.navigator.appVersion;
+val = window.navigator.userAgent;
+val = window.navigator.platform;
+val = window.navigator.vendor;
+val = window.navigator.language;
 
 
 
