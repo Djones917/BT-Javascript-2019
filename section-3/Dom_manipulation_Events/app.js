@@ -72,5 +72,23 @@ val = document.scripts[2].getAttribute('src');
 
 
 
+// HTML Collections NOTE: if you want you can turn them into a collection or array so you can use a foreach! You can't do this by default!
+// An example of why you can't just do a foreach with HTML. Remember foreach is for array only!
+//let scripts = document.scripts;
+
+// scripts.forEach(function(script){
+//   console.log(script);
+// });
+
+
+// Do it this way! NOTE: you can also use the getAttribute() with this below!
+let scripts = document.scripts;
+let scriptsArr = Array.from(scripts);
+
+scriptsArr.forEach(function (script) {
+   console.log(script);
+ });
+
 
 console.log(val);
+
