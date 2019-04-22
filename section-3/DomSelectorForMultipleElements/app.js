@@ -30,5 +30,10 @@ lis[3].textContent = 'Hello World';
 // TURN HTML COLLECTION INTO AN ARRAY! (NOTE: HTML COLLECTION IS NOT AN ARRAY!!!!) Remeber use let to change something as const will not let you!
 lis = Array.from(lis);
 lis.reverse();
+// Now that it's an array we can do a foreach
+lis.forEach(function(li){
+   console.log(li.className);
+   li.textContent = 'Hello';
+});
 
 console.log(lis);
