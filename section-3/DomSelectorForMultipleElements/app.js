@@ -18,7 +18,7 @@
 
 
 
-// getElementsByTagName()
+// document.getElementsByTagName()
 
 // let lis = document.getElementsByTagName('li');
 // console.log(lis);
@@ -44,4 +44,9 @@
 
 
 
+
+// document.querySelectorAll() you can put any kind of css selector in!
+const items = document.querySelectorAll('ul.collection li-collection-item');
+
+console.log(items);
 
