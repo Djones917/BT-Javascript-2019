@@ -45,8 +45,25 @@
 
 
 
-// document.querySelectorAll() you can put any kind of css selector in!
+// document.querySelectorAll() NOTE: Returns node lists (You do not have to convert them to an array)
 const items = document.querySelectorAll('ul.collection li-collection-item');
+
+items.forEach(function(item, index){
+   item.textContent = `${index}: Hello`;
+});
+
+
+const liOdd = document.querySelectorAll('li:nth-child(odd)');
+const liEven = document.querySelectorAll('li:nth-child(even)');
+
+liOdd.forEach(function (li, index) {
+   li.style.background = '#ccc';
+});
+
+// You can do it also with a for loop NOTE: THE FOR LOOP WILL WORK EVEN IF YOU DON"T CONVERT TO ARRAY or use querySelectorAall()!
+for(let i = 0; i < liEven.length; i++) {
+   liEven[i].style.background = '#f4f4f4';
+}
 
 console.log(items);
 
