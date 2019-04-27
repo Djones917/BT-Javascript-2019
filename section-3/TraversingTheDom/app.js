@@ -1,4 +1,5 @@
 // Traversin the DOM - Move up and down throught the DOM Working with parents and children
+// NOTE: So I'm seeing that there is HTML Collections, nodes and HTML elements
 
 let val;
 
@@ -27,7 +28,19 @@ val = list.childNodes[1].nodeType; // This will return a number Refer to the com
 // Get child element nodes NOTE: Returns a HTML collection - You wil use this more childNode above!
 val = list.children;
 val = list.children[0];
-val = list.children[1].textContent = 'Hello';
+list.children[1].textContent = 'Hello';
 // Children of children
+list.children[3].children[0].id = 'test-link';
+val = list.children[3].children[0];
+
+val = list.firstChild; // This gives a text node
+val = list.firstElementChild; // This gives you the first html element!
+
+val = list.lastChild; // This gives a text node
+val = list.firstElementChild; // This gives you the last html element!
+
+// Get the count
+val = list.childElementCount;
+
 
 console.log(val);
