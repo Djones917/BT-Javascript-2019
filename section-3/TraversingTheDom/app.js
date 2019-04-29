@@ -49,6 +49,16 @@ val = listItem.parentElement;
 val = listItem.parentElement.parentElement;
 
 // Get Siblings
+val = listItem.nextSibling; // will give text node
+val = listItem.nextElementSibling; // Wwll give next HTML sibling
+// Get sibling of sibling
+val = listItem.nextElementSibling.nextElementSibling;
+
+
+// Get previous Siblings
+val = listItem.previousSibling; // will give text node
+val = listItem.previousElementSibling; // Wwll give next HTML sibling NOTE: This could return null because there is just no previous sibling
+
 
 
 
