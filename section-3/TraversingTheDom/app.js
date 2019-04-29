@@ -62,4 +62,6 @@ val = listItem.previousElementSibling; // Wwll give next HTML sibling NOTE: This
 
 
 
+
+
 console.log(val);
