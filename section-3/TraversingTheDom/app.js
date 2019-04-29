@@ -32,15 +32,24 @@ list.children[1].textContent = 'Hello';
 // Children of children
 list.children[3].children[0].id = 'test-link';
 val = list.children[3].children[0];
-
+// First Child
 val = list.firstChild; // This gives a text node
 val = list.firstElementChild; // This gives you the first html element!
-
+// Last Child
 val = list.lastChild; // This gives a text node
 val = list.firstElementChild; // This gives you the last html element!
 
-// Get the count
+// Get the count of child elements
 val = list.childElementCount;
+
+// Get Parent Node
+val = listItem.parentNode;
+val = listItem.parentElement;
+// Get parents of parents
+val = listItem.parentElement.parentElement;
+
+// Get Siblings
+
 
 
 console.log(val);
