@@ -41,6 +41,21 @@ list.removeChild(lis[3]);
 
 // Classes and attributes
 const firstLi = doccument.querySelector('li:first-child');
+const link = firstLi.children[0];
+
+let val;
+
+// Classes
+val = link.className;
+val = link.classList;
+val = link.classList[0];
+link.classList.add('test');
+link.classList.remove('test');
+val = link;
+
+// Attributes
+
+console.log(val);
 
 
 
