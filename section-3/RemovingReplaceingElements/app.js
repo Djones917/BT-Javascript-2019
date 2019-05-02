@@ -24,7 +24,29 @@ cardAction.replaceChild(newHeading, oldHeading);
 
 
 
+
+
+
+
 // Remove Element
 
 const lis = document.querySelectorAll('li');
 const list = document.querySelector('ul');
+
+// Rmove list item
+lis[0].remove();
+// Remove child element
+list.removeChild(lis[3]);
+
+
+// Classes and attributes
+const firstLi = doccument.querySelector('li:first-child');
+
+
+
+
+
+
+
+
+
