@@ -54,14 +54,15 @@ link.classList.remove('test');
 val = link;
 
 // Attributes
+val = link.getAttribute('href'); 
+val = link.setAttribute('href', 'http://google.com');
+link.setAttribute('title', 'Google');
+// Test if something has an attribute NOTE: put in what you are looking for example 'title'
+val = link.hasAttribue('title');
+link.removeAttribute('title');
+val = link;
 
 console.log(val);
-
-
-
-
-
-
 
 
 
