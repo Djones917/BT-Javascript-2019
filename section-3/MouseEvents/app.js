@@ -5,6 +5,8 @@ const heading = document.querySelector('h5');
 
 // Click
 clearBtn.document.addEventListener('click', runEvent);
+// Double Click
+clearBtn.document.addEventListener('dblclick', runEvent);
 
 
 
