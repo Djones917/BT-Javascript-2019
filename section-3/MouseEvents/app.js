@@ -12,8 +12,23 @@ const heading = document.querySelector('h5');
 // Mouse Down -NOTE: TO FIRE MOUSE DOWN IT"S A CLICK AND HOLD!!!!
 clearBtn.document.addEventListener('mousedown', runEvent);
 
-// Mouse up -NOTE: TO FIRE MOUSE up IT"S A CLICK AND HOLD THEN LET GO AND IT WILL FIRE!!!!
+// Mouse UP -NOTE: TO FIRE MOUSE up IT"S A CLICK AND HOLD THEN LET GO AND IT WILL FIRE!!!!
 clearBtn.document.addEventListener('mousedown', runEvent);
+
+// Mouse ENTER
+clearBtn.document.addEventListener('mouseenter', runEvent);
+
+// Mouse Leave
+clearBtn.document.addEventListener('mouseleave', runEvent);
+
+// Mouse OVER
+clearBtn.document.addEventListener('mouseover', runEvent);
+
+// Mouse OUT
+clearBtn.document.addEventListener('mouseout', runEvent);
+
+// Mouse Move NOTE: ANY MOVEMENT INSIDE SELECTED ELEMENT!!!
+clearBtn.document.addEventListener('mousemove', runEvent);
 
 // Event Handler
 function runEvent(e) {
