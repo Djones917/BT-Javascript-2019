@@ -16,13 +16,22 @@ taskInput.value = '';
 //taskInput.addEventListener('keyup', runEvent);
 
 // Keypress 
-taskInput.addEventListener('keypress', runEvent);
+//taskInput.addEventListener('keypress', runEvent);
 
 // Focus - when you click in element focus comes in
-taskInput.addEventListener('focus', runEvent);
+//taskInput.addEventListener('focus', runEvent);
 
 // Blur - when you click outside of an element blur comes in
-taskInput.addEventListener('blur', runEvent);
+//taskInput.addEventListener('blur', runEvent);
+
+// Cut - as in cut and paste on keyboard ctrl C
+taskInput.addEventListener('cut', runEvent);
+
+// Paste - as in cut and paste on keyboard ctrl V
+taskInput.addEventListener('cut', runEvent);
+
+// Input - Will fire off on any input event type, cut, paste ect.
+taskInput.addEventListener('input', runEvent);
 
 
 // Create runEvent function
