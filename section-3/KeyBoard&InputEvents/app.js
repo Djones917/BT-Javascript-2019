@@ -9,8 +9,21 @@ taskInput.value = '';
 // Let's add an Event Listener to the form
 //form.addEventListener('submit', runEvent);
 
-// Let's add an Event Listener to the taskInput NOTE: REMEMBER EVERYTIME YOU TYPE IT"S KEYDOWN
-taskInput.addEventListener('keydown', runEvent);
+// Keydown - Let's add an Event Listener to the taskInput NOTE: REMEMBER EVERYTIME YOU TYPE IT'S KEYDOWN
+//taskInput.addEventListener('keydown', runEvent);
+
+// Keyup - Let's add an Event Listener to the taskInput NOTE: REMEMBER EVERYTIME YOU TYPE AND THE KEY COMES UP IT'S KEYUP
+//taskInput.addEventListener('keyup', runEvent);
+
+// Keypress 
+taskInput.addEventListener('keypress', runEvent);
+
+// Focus - when you click in element focus comes in
+taskInput.addEventListener('focus', runEvent);
+
+// Blur - when you click outside of an element blur comes in
+taskInput.addEventListener('blur', runEvent);
+
 
 // Create runEvent function
 function runEvent(e) {
