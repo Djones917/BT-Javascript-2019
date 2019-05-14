@@ -26,3 +26,4 @@
 
 
 // Event Delegation is the opposite of Event bubbling with delegation we put the event listener on the parent and use logic to target the element.
+const deleteItem = document.querySelector('.delete-item');
