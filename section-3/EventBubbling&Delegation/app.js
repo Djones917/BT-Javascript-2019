@@ -26,4 +26,16 @@
 
 
 // Event Delegation is the opposite of Event bubbling with delegation we put the event listener on the parent and use logic to target the element.
-const deleteItem = document.querySelector('.delete-item');
+// This will only work on one so this is where you would use event delegation you would also you event delegation when you insert something into a particular place.
+//const delItem = document.querySelector('.delete-item');
+
+//delItem.addEventListener('click', deleteItem);
+
+// So now lets do delegation by grabbing a parent and then going in to grab the particular child
+document.body.addEventListener('click', deleteItem);
+
+function deleteItem(e) {
+    console.log('Delete Item!');
+
+    console.log(e.target);
+}
