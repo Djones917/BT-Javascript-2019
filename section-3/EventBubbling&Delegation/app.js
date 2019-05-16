@@ -25,8 +25,8 @@
 
 
 
-// Event Delegation is the opposite of Event bubbling with delegation we put the event listener on the parent and use logic to target the element.
-// This will only work on one so this is where you would use event delegation you would also you event delegation when you insert something into a particular place.
+// Event Delegation is the opposite of Event bubbling with delegation we put the event listener on the parent and use a condition/logic to target the element.
+// This will only work on one so this is where you would use event delegation you would also you event delegation when you dynamically insert something into a particular place.
 //const delItem = document.querySelector('.delete-item');
 
 //delItem.addEventListener('click', deleteItem);
@@ -35,7 +35,12 @@
 document.body.addEventListener('click', deleteItem);
 
 function deleteItem(e) {
-    console.log('Delete Item!');
+    //if(e.target.parentElement.className === 'delete-item secondary-content') {
+    //   console.log('Delete Item!');
+    //}
 
-    console.log(e.target);
+    if (e.target.parentElement.classList.contains('delete-item')) {
+        console.log('Delete Item!');
+        e.target.parentElement.parentElement.remove();
+    }
 }
