@@ -24,3 +24,15 @@
 //console.log(name, age);
 
 
+
+
+
+
+// To add it to the form
+document.querySelector('form').addEventListener('submit', function(e){
+    const task = document.getElementById('task').value;
+    console.log(task);
+
+
+    e.preventDefault();
+});
