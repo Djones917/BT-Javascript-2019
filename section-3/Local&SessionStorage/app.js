@@ -28,11 +28,29 @@
 
 
 
-// To add it to the form
+// To add it to the form NOTE: REMEMBER WHEN ADDIN TO STORAGE ANYTHING YOU SET WILL BE REPLACED SO MAKE AN ARRAY TO HOLD MULTIPLE TASKS AND STORE AS A STRING!!!
 document.querySelector('form').addEventListener('submit', function(e){
     const task = document.getElementById('task').value;
-    console.log(task);
 
+    let tasks;
+
+    if(localStorage.getItem('tasks') === null) {
+      tasks = [];
+    } else {
+        tasks = JSON.parse(localStorage.getItem('tasks'));
+    }
+
+    tasks.push(task);
+
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+    alert('Task Saved!');
 
     e.preventDefault();
 });
+
+const tasks = JSON.parse(localStorage.getItem('tasks'));
+
+tasks.forEach(function(task){
+    console.log(task);
+});
+
