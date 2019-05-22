@@ -22,9 +22,20 @@
               <div class="row">
                 <div class="col-md-8 offset-md-2">
                   <form id="goal-form">
-                    <input type="text" name="goal" id="task">
+                    <label for="goal">New Goal:</label>
+                    <input type="text" name="goal" id="goal">  
+                    <input type="submit" value="Add Goal" type="button">                  
                   </form>
-                </div> <!-- end col-md-8 -->
+                </div> <!-- end col-md-8 offset-md-2 -->
+              </div> <!-- End of row -->
+              <div class="row">
+                <div class="col-md-8 offset-md-2">
+                  <h5 id="goal-title">Find Goal</h5>
+                  <label for="filter">Filter Goal:</label>
+                  <input type="text" name="filter" id="filter">   
+                  <ul class="collection"></ul> <!-- End of UL -->   
+                  <a href="#" class=" clear-goals btn btn-dark btn-lg" role="button">Clear Goals</a>
+                </div> <!-- End of col-md-8 offset-md-2 -->
               </div> <!-- End of row -->
             </div> <!-- End of card body -->
           </div> <!-- End of card -->
