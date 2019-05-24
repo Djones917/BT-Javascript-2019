@@ -12,13 +12,14 @@ loadEventListeners();
 // 3. Load all Event Listeners
 function loadEventListeners() {
     // 4. add task event
-    form.addEventListener('submit', addTask);
+    form.addEventListener('submit', addGoal);
+    // 5. remove task event
+    goalList.addEventListener('click', removeGoal);
     
 }
 
-
 // 4. add task event function
-function addTask(e) {
+function addGoal(e) {
     if(goalInput.value === '') {
       alert('Please add a goal.');
     }
@@ -49,3 +50,9 @@ function addTask(e) {
 }
 
 
+// add remove task event function
+function removeGoal(e) {
+  if(e.target.parentElement.classList.contains('delete-item')) {
+    console.log(e.target);
+  }
+}
