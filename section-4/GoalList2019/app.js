@@ -11,14 +11,17 @@ loadEventListeners();
 
 // 3. Load all Event Listeners
 function loadEventListeners() {
-    // 4. add task event
+    // 4. add goal event
     form.addEventListener('submit', addGoal);
-    // 5. remove task event
+    // 5. remove goal event
     goalList.addEventListener('click', removeGoal);
-    
+    // 6. clear goal event
+    clearBtn.addEventListener('click', clearGoals);
+    // 7. filter goal event
+    filter.addEventListener('keyup', filterGoals);    
 }
 
-// 4. add task event function
+// 4. add goal event function
 function addGoal(e) {
     if(goalInput.value === '') {
       alert('Please add a goal.');
@@ -50,9 +53,42 @@ function addGoal(e) {
 }
 
 
-// add remove task event function
+// 5. add remove goal event function
 function removeGoal(e) {
   if(e.target.parentElement.classList.contains('delete-item')) {
-    console.log(e.target);
+    if(confirm('Are you sure?')) {
+    e.target.parentElement.parentElement.remove();
+   }
   }
 }
+
+
+// 6. add clear goal event function
+function clearGoals() {
+  // goalList.innerHTML = '';
+
+  // Fast way than above
+  while(goalList.firstChild) {
+     goalList.removeChild(goalList.firstChild);
+  }
+}
+
+
+// 7. add filter goals event function
+function filterGoals(e) {
+  const text = e.target.value.toLowerCase();
+ 
+  // remember use querySelectorAll as it returns a node list with a foreach NOTE: if you use something else it returns an HTML collection that you have to convert into an array in order to use foreach!!!
+  document.querySelectorAll('.collection-item').forEach(function(goal){
+    const item = goal.firstChild.textContent;
+
+    if(item.toLowerCase().indexOf(text) != -1) {
+      goal.style.display = 'block';
+    } else {
+      goal.style.display = 'none';
+    }
+  });
+
+}
+
+
