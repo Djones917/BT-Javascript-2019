@@ -21,7 +21,7 @@ function loadEventListeners() {
     filter.addEventListener('keyup', filterGoals);    
 }
 
-// 4. add goal event function
+// 4. add goal event function NOTE: local storage starts in this function as 8.
 function addGoal(e) {
     if(goalInput.value === '') {
       alert('Please add a goal.');
@@ -46,10 +46,28 @@ function addGoal(e) {
     // append li to ul
     goalList.appendChild(li);
 
+    // 8a. store goal in local storage
+    storeGoalInLocalStorage(goalInput.value);
+
     // clear input
     goalInput.value = '';
 
     e.preventDefault();
+}
+
+
+// 8b.  create store goal in local storage function
+function storeGoalInLocalStorage(goal) {
+  let goals;
+  if(localStorage.getItem('goals') === null) {
+    goals = [];
+  } else {
+    goals = JSON.parse(localStorage.getItem('goals'));
+  }
+
+  goals.push(goal);
+
+  localStorage.setItem('goals', JSON.stringify(goals));
 }
 
 
