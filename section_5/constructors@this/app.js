@@ -10,17 +10,17 @@ console.log(personOne.age);
 
 
 
-// Basic Constructor
+// Basic Constructor NOTE: ON CONSTRUCTORS YOU CAPITALIAZE THE FIRST WORD!!!
 /*function Person() {
   this.name = 'Derek';
 }
 // Instantiate a person object from above
 const derek = new Person();
 console.log(derek);
-console.log(john);*/
+console.log(john);*/ // This will return DEREK because it's hard coded above!
 
 
-// Another example of a basic constructor
+// Another example of a basic constructor THIS IS NOT HARD CODED AS ABOVE!
 /*function Person(name, age) {
   this.name = name;
   this.age = age;
