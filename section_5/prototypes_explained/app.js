@@ -1,7 +1,5 @@
-//console.log('Connected!');
-
 // Object.prototype
-// Person.prototype
+// Person.prototype NOTE: There is a "PROTOTYPE CHAIN" that you can start at person and go up to object
 
 // Person Constructor
 function Person(firstname, lastname, dob) {
