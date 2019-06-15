@@ -6,8 +6,7 @@ const posts = [
 
 // This was created synchronous it takes 2 seconds for server to make create post and 1 second for it to get post but post three will not show up!
 // Create Posts
-//function createPosts() {
-  
+//function createPost() {  
   //setTimeout(function(post) {
     //posts.push(post);
   //}, 2000);
@@ -27,7 +26,7 @@ const posts = [
 
 
 // Create Posts
-//createPosts({title: 'Post Three', body: 'This is post Three'});
+//createPost({title: 'Post Three', body: 'This is post Three'});
 
 
 //getPosts();
@@ -39,10 +38,10 @@ const posts = [
 
 // Now let's do this asynchronous with callbacks!
 // Create Posts
-function createPosts() {
-
-  setTimeout(function (post) {
+function createPost(post, callback) {
+  setTimeout(function () {
     posts.push(post);
+    callback();
   }, 2000);
 }
 
@@ -57,3 +56,6 @@ function getPosts() {
     document.body.innerHTML = output;
   }, 1000);
 }
+
+
+createPost({ title: 'Post Three', body: 'This is post Three' }, getPosts);
