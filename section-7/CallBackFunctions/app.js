@@ -38,11 +38,19 @@ const posts = [
 
 // Now let's do this asynchronous with callbacks!
 // Create Posts
-function createPost(post, callback) {
-  setTimeout(function () {
-    posts.push(post);
-    callback();
-  }, 2000);
+function createPost(post) {
+  return new Promise(function(resolve, reject){
+    setTimeout(function () {
+      posts.push(post);
+      const error = true;
+
+      if(!error) {
+        resolve();
+      } else {
+        reject('ERROR: Something went wrong!');
+      }      
+    }, 2000);
+  }); 
 }
 
 
@@ -58,4 +66,9 @@ function getPosts() {
 }
 
 
-createPost({ title: 'Post Three', body: 'This is post Three' }, getPosts);
+createPost({ title: 'Post Three', body: 'This is post Three' })
+.then(getPosts)
+.catch(function(err) {
+   console.log(err);
+});
+
