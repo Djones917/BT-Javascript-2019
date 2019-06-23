@@ -17,9 +17,12 @@
 //   return 'Hello';
 // }
 
-// Return object
+// Return object literal NOTE: THIS CAN GET YOU INTO TROUBLE IT WILL RETURN UNDEFINED IT THINKS THE CURLY BRACES ARE PART OF FUNCTION SO WRAP IN PARENTHESIS
 // const sayHello = () => ({ msg: 'Hello' });
 
+
+// look only one parameter (name) does not need parenthesis see line 27
+// const sayHello = (name) => console.log(`Hello ${name}`);
 // Single param does not need parenthesis
 // const sayHello = name => console.log(`Hello ${name}`);
 
