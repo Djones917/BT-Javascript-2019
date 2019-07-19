@@ -7,8 +7,12 @@ try {
   // Produce a type error
   null.myFunction();
 } catch(e) {
+
   console.log(e);
 
+  // You can format errors 
+  //console.log('It is NULL!!!');
+  
   // This will work too it will just hide error in console and just show message
   //console.log(e.message);
 
