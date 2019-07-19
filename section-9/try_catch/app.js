@@ -1,5 +1,7 @@
 //console.log('Connected!');
 
+const user = {email: 'jdoe@gmail.com'};
+
 // This is a basic "try and catch" this helps trouble shoot code the "e" is not for "event" it is for "error" or "err" catch takes that argument of "e"
 try {
   // Produce a ReferenceError
@@ -14,6 +16,10 @@ try {
   // Will produce URIError
   // decodeURIComponent('%');
 
+  if(!user.name) {
+    //throw 'User has no name';
+    throw new syntaxError('User has no name');
+  }
 
 } catch(e) {
 
