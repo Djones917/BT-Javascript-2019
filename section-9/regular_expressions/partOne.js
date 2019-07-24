@@ -17,7 +17,7 @@ re = /hello/i; // i equal case insensitive in the test()
 // FUNCTIONS THAT ARE USED TO EVALUATE EXPRESSIONS
 
 // exec() - Returns a result in array or null if no match NOTE: this will give an index so it could start with 0
-//const result = re.exec('hello world'); // INDEX: 0
+// const result = re.exec('hello world'); // INDEX: 0
 // const result = re.exec('Derek hello world'); // INDEX: 6 because it sees my name and then finds h 
 // console.log(result);
 // console.log(result[0]);
@@ -37,10 +37,18 @@ re = /hello/i; // i equal case insensitive in the test()
 
 
 // match() - Return result array or null NOTE: This one kind of works backwards/!?!?!?
-const str = 'Hello There';
-const result = str.match(re);
-console.log(result);
+// const str = 'Hello There';
+// const result = str.match(re);
+// console.log(result);
 
+
+
+
+
+// search() - Returns the index of the first match if not found returns a -1
+const str = 'Hello There';
+const result = str.search(str);
+console.log(result);
 
 
 
