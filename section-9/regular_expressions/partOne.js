@@ -4,7 +4,7 @@
 // REMEMBER forward slashes /Hello/ is an expression
 let re;
 re = /hello/i; // i equal case insensitive in the test()
-re = /hello/g; // Global search
+// re = /hello/g; // Global search
 
 // console.log(re); // returns /Hello
 // But if you do source - it will disregard the forward slashes and return Hello
@@ -29,7 +29,16 @@ re = /hello/g; // Global search
 
 
 // test() - Returns true or false
-const result = re.test('Hello'); // this will return false because of uppercase H NOTE: you can add i to the end /hello/i to make it insensitive
+// const result = re.test('Hello'); // this will return false because of uppercase H NOTE: you can add i to the end /hello/i to make it insensitive
+// console.log(result);
+
+
+
+
+
+// match() - Return result array or null NOTE: This one kind of works backwards/!?!?!?
+const str = 'Hello There';
+const result = str.match(re);
 console.log(result);
 
 
