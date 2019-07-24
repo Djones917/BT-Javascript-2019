@@ -46,9 +46,21 @@ re = /hello/i; // i equal case insensitive in the test()
 
 
 // search() - Returns the index of the first match if not found returns a -1
+// const str = 'Hello There'; // This will return index of 0 but it would return something different 'Derek Hello there' would return 6
+// const result = str.search(str);
+// console.log(result);
+
+
+
+
+
+// replace() - Returns new string with some or all matches of a pattern
 const str = 'Hello There';
-const result = str.search(str);
-console.log(result);
+const newStr = str.replace(re, 'Hi');
+console.log(newStr);
+
+
+
 
 
 
