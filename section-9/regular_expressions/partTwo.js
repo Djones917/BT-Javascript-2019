@@ -1,4 +1,5 @@
 // Part Two - Metacharacter Symbols
+// Part Three - Character Sets and Quantifiers
 
 
 let re;
@@ -17,8 +18,12 @@ re = /gre?a?y/i;  // ? Optional Character means the word could be spelled two di
 re = /gre?a?y\?/i;  // Escape Character is the backslash \ Just like you would escape in javascript.
 
 
+// Brackets [] - Charatcer Sets
+re = /gr[ae]y/i;  // Must be an 'a' or 'e'
+
+
 // String to match
-const str = 'Hello';
+const str = 'Gray';
 
 // Log results
 const result = re.exec(str);
