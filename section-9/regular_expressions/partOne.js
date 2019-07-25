@@ -1,4 +1,4 @@
-//PART ONE
+//PART ONE - Evaluation Functions
 // REGULAR EXPRESSIONS = A PATTERN OF CHARACTERS
 
 // REMEMBER forward slashes /Hello/ is an expression
