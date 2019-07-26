@@ -19,7 +19,10 @@ re = /gre?a?y\?/i;  // Escape Character is the backslash \ Just like you would e
 
 
 // Brackets [] - Charatcer Sets
-re = /gr[ae]y/i;  // Must be an 'a' or 'e'
+re = /gr[ae]y/i;  // Must be an 'a' or 'e' this is better than escape in some ways
+re = /[GF]ray/i;   // Must be a 'G' or 'F'
+re = /[^GF]ray/i;   // Matches anything except 'G' or 'F'
+
 
 
 // String to match
