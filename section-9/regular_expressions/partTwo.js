@@ -36,7 +36,7 @@ re = /Hel{2,}o/i;   // Must occur at least {m} times
 
 
 // Parenthesis () - Grouping
-
+re = /^([0-9]x){3}$/;
 
 
 
