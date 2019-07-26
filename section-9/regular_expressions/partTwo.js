@@ -24,13 +24,20 @@ re = /[GF]ray/i;   // Must be a 'G' or 'F'
 re = /^[GF]ray/i;   // Matches 'G' or 'F' NOTE: NOTICE WHERE THE ^ IS LOCATED!!!
 re = /[^GF]ray/i;   // Matches anything except 'G' or 'F' NOTE: NOTICE WHERE THE ^ IS LOCATED!!!
 re = /[A-Z]ray/;   // Matches any Uppercase Letter
-re = /[a-z]ray/;   // Matches any Lowercase Letter
+re = /[A-Za-z]ray/;   // Matches any Uppercase or Lowercase Letter
+re = /[0-9]ray/;      // Matches any digit 0 - 9
+re = /[0-9][0-9]ray/;  // If you added 10ray it would work because of the double expressions [][] NOTE: YOU CAN USE MULTIPLE EXPRESSIONS!
+
+
+// Braces {} - Quantifiers
+re = /Hello/i;
+
 
 
 
 
 // String to match
-const str = 'Gray';
+const str = 'Hello';
 
 // Log results
 const result = re.exec(str);
