@@ -30,7 +30,13 @@ re = /[0-9][0-9]ray/;  // If you added 10ray it would work because of the double
 
 
 // Braces {} - Quantifiers
-re = /Hello/i;
+re = /Hel{2}o/i;   // Must occur {m} exactly amount of times - This will look for 2 'l' Letter comes before number
+re = /Hel{2,4}o/i;   // Must occur {m} exactly amount of times
+re = /Hel{2,}o/i;   // Must occur at least {m} times
+
+
+// Parenthesis () - Grouping
+
 
 
 
