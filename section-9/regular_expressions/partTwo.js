@@ -21,7 +21,11 @@ re = /gre?a?y\?/i;  // Escape Character is the backslash \ Just like you would e
 // Brackets [] - Charatcer Sets
 re = /gr[ae]y/i;  // Must be an 'a' or 'e' this is better than escape in some ways
 re = /[GF]ray/i;   // Must be a 'G' or 'F'
-re = /[^GF]ray/i;   // Matches anything except 'G' or 'F'
+re = /^[GF]ray/i;   // Matches 'G' or 'F' NOTE: NOTICE WHERE THE ^ IS LOCATED!!!
+re = /[^GF]ray/i;   // Matches anything except 'G' or 'F' NOTE: NOTICE WHERE THE ^ IS LOCATED!!!
+re = /[A-Z]ray/;   // Matches any Uppercase Letter
+re = /[a-z]ray/;   // Matches any Lowercase Letter
+
 
 
 
