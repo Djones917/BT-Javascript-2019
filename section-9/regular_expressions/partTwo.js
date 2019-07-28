@@ -41,9 +41,9 @@ re = /^([0-9]x){3}$/;
 
 
 // Shorthand Character Classes
-re = /\w/;   // Word Character - alphanumeric or _
-
-
+re = /\w/;   // Word Character - alphanumeric (This is all letters or numbers) or _
+re = /\w+/;  // + makes it look at all the word characters
+re = /\W/;   // Non-word characters - Everything else except all letters, numbers or _
 
 
 
