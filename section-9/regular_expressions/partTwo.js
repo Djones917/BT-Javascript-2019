@@ -44,8 +44,17 @@ re = /^([0-9]x){3}$/;
 re = /\w/;   // Word Character - alphanumeric (This is all letters or numbers) or _
 re = /\w+/;  // + makes it look at all the word characters
 re = /\W/;   // Non-word characters - Everything else except all letters, numbers or _
+re = /\d/;   // Match any digit
+re = /\d+/;  // Match any digit 0 or more times
+re = /\D/;   // Match any Non-digit 
+re = /\s/;   // Match whitespace character
+re = /\S/;   // Match Non-whitespace character
+re = /Hell\b/i; // Word boundry
 
 
+// Assertions
+re = /x(?=y)/;  // Match x if only it's followed by y
+re = /x(?!y)/;  // Match x if only it's NOT followed by y
 
 
 // String to match
