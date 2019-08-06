@@ -25,5 +25,16 @@
 
 
 
-// Generators
+// Generators - NOTE: The * tells it that it is a generator!
 
+function* sayNames() {
+  yield 'Jack';
+  yield 'Jill';
+  yield 'John';
+}
+
+const name = sayNames();
+
+console.log(name.next().value); // Jack
+console.log(name.next().value); // Jill
+console.log(name.next().value); // John
