@@ -2,7 +2,19 @@
 
 
 // Iterator Example
+function nameIterator(names) {
+  let nextIndex = 0;
 
-function nameIterator() {
-  
+  return {
+    next: function() {
+        return nextIndex < names.length ? { value: names[nextIndex++], done: false} : {done: true}
+    }
+  }
 } 
+
+
+
+
+
+// Create an array of names
+const nameArr = ['Jack', 'Jill', 'John'];
