@@ -25,16 +25,40 @@
 
 
 
+
+
+
 // Generators - NOTE: The * tells it that it is a generator!
 
-function* sayNames() {
-  yield 'Jack';
-  yield 'Jill';
-  yield 'John';
+// function* sayNames() {
+//   yield 'Jack';
+//   yield 'Jill';
+//   yield 'John';
+// }
+
+// const name = sayNames();
+
+// console.log(name.next().value); // Jack
+// console.log(name.next().value); // Jill
+// console.log(name.next().value); // John
+
+
+// ID Creator - with generator *
+function* createIds() {
+    let index - 0;
+
+    while(true) {
+       yield index++;
+    }
 }
 
-const name = sayNames();
 
-console.log(name.next().value); // Jack
-console.log(name.next().value); // Jill
-console.log(name.next().value); // John
+const gen = createIds();
+
+console.log(gen.next().value); // 0
+console.log(gen.next().value); // 1
+console.log(gen.next().value); // 2
+console.log(gen.next().value); // 3
+console.log(gen.next().value); // 4
+console.log(gen.next().value); // 5
+console.log(gen.next().value); // 6 ect... 
