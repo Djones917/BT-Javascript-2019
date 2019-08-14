@@ -25,8 +25,6 @@ console.log(rest); // 300 - 500
 // console.log(person1, person2, person3); // prints John Beth Mike
 
 
-
-
 // Example 2 - Parse array returned from a function
 
 // function getPeople() {
@@ -38,3 +36,32 @@ console.log(rest); // 300 - 500
 // [person1, person2, person3] = getPeople();
 
 // console.log(person1, person2, person3); // prints John Beth Mike
+
+
+
+
+
+
+// Object Destructuring
+
+const person = {
+  name: 'John Doe',
+  age: 30,
+  city: 'Boise',
+  gender: 'Male',
+  sayHello: function() {
+      console.log('Hello');
+  } 
+}
+
+// Old ES5 way
+// const name = person.name,
+//       age =  person.age,
+//       city = person.city;
+
+// New ES6 Way
+const { name, age, city } = person;      
+
+console.log(name, age, city); // Prints John Doe 30 Boise
+sayHello(); // Prints Hello
+
