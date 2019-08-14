@@ -17,9 +17,24 @@ console.log(rest); // 300 - 500
 
 
 // Array Destructuring 
+// Example 1
+// const people = ['John', 'Beth', 'Mike'];
 
-const people = ['John', 'Beth', 'Mike'];
+// const [person1, person2, person3] = people;
 
-const [person1, person2, person3] = people;
+// console.log(person1, person2, person3); // prints John Beth Mike
 
-console.log(person1, person2, person3); // prints John Beth Mike
+
+
+
+// Example 2 - Parse array returned from a function
+
+// function getPeople() {
+//     return ['John', 'Beth', 'Mike'];
+// }
+
+// let person1, person2, person3;
+
+// [person1, person2, person3] = getPeople();
+
+// console.log(person1, person2, person3); // prints John Beth Mike
