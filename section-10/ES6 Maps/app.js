@@ -37,11 +37,22 @@ map1.set(key3, 'Value of key3');
 //   console.log(value);
 // }
 
-
-
 // Loop through with forEach
 // map1.forEach(function(value, key){
 //   console.log(`${key} = ${value}`);
 // });
 
+
+// Convert to arrays
+// Create an array of the key value pairs
+// const keyValArr = Array.from(map1);
+// console.log(keyValArr);
+
+// Create an array of the values
+const valArr = Array.from(map1.values());
+console.log(valArr);
+
+// Create an array of the keys
+const keyArr = Array.from(map1.keys());
+console.log(keyArr);
 
