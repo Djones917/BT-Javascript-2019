@@ -13,5 +13,11 @@ console.log(set1);
 
 
 // SET2 
-const set2 = new Set([1, true, 'string']);
-console.log(set2);
+// const set2 = new Set([1, true, 'string']);
+// console.log(set2);
+
+
+// Get count
+console.log(set1.size);
+
+// Check for values
