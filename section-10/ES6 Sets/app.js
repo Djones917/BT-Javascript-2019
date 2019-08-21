@@ -33,13 +33,19 @@ console.log(set1);
 
 // Iterating through sets
 // for...0f
-for(let item of set1) {
-   console.log(item);
-}
+// for(let item of set1) {
+//    console.log(item);
+// }
 
 // forEach loop
 // set1.forEach((value) => 
 //   console.log(value);
 // );
+
+
+// Convert Set To Array
+const setArr = Array.from(set1);
+console.log(setArr);
+
 
 
