@@ -11,17 +11,20 @@
 
 
 // STANDARD MODULE PATTERN - CAN'T ACCESS WHAT'S INSIDE!
-const UICtrl = (function() {
-  let text = 'Hello World!';
+// const UICtrl = (function() {
+//   let text = 'Hello World!';
 
-  const changeText = function() {
-    const element = document.querySelector('h1');
-    element.textContent = text;
-  }
+//   const changeText = function() {
+//     const element = document.querySelector('h1');
+//     element.textContent = text;
+//   }
 
-  return {
-    callChangeText: function() {
-      changeText();
-    }
-  }
-})();
+//   return {
+//     callChangeText: function() {
+//       changeText();
+//       console.log(text);
+//     }
+//   }
+// })();
+
+// UICtrl.callChangeText();
