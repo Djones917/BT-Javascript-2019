@@ -38,6 +38,20 @@ const ItemCtrl = (function() {
 
   function add(item) {
     data.push(item);
-    console.log('Item added...');
+    console.log('Item added...');    
+  }
+
+  function get(id) {
+    return data.find(item => {
+      return item.id === id;
+    });
+  }
+
+  return {
+    add: add,
+    get: get
   }
 })();
+
+ItemCtrl.add({id: 1, name: 'John'});
+
