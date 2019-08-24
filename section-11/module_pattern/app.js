@@ -28,3 +28,16 @@
 // })();
 
 // UICtrl.callChangeText();
+
+
+
+
+// REAVEALING MODULE PATTERN
+const ItemCtrl = (function() {
+  let data = []; // let _data = [];  NOTE: UNDER SCORE IS A PRIVATE VARIABLE!!!
+
+  function add(item) {
+    data.push(item);
+    console.log('Item added...');
+  }
+})();
