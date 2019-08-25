@@ -33,25 +33,42 @@
 
 
 // REAVEALING MODULE PATTERN
-const ItemCtrl = (function() {
-  let data = []; // let _data = [];  NOTE: UNDER SCORE IS A PRIVATE VARIABLE!!!
+// const ItemCtrl = (function() {
+//   let data = []; // let _data = [];  NOTE: UNDER SCORE IS A PRIVATE VARIABLE!!!
 
-  function add(item) {
-    data.push(item);
-    console.log('Item added...');    
-  }
+//   function add(item) {
+//     data.push(item);
+//     console.log('Item added...');    
+//   }
 
-  function get(id) {
-    return data.find(item => {
-      return item.id === id;
-    });
-  }
+//   function get(id) {
+//     return data.find(item => {
+//       return item.id === id;
+//     });
+//   }
 
-  return {
-    add: add,
-    get: get
+//   return {
+//     add: add,
+//     get: get
+//   }
+// })();
+
+// ItemCtrl.add({id: 1, name: 'John'});
+
+
+
+
+
+// SINGLETON PATTERN - NOTE: I INCLUDED THIS IN BECAUSE IT WAS A SHORT LESSON
+
+const Singleton = (function() {
+  let instance;
+
+  function createInstance() {
+    const object = new Object('Object instance...');
   }
 })();
 
-ItemCtrl.add({id: 1, name: 'John'});
+
+
 
