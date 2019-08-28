@@ -89,3 +89,11 @@ console.log(instanceA === instanceB);
 
 
 
+
+// FACTORY PATTERN 
+
+function MemberFactory() {
+  this.createMember = function(name, type) {
+    let member;
+  }
+}
