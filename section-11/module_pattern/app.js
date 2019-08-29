@@ -113,3 +113,20 @@ function MemberFactory() {
     return member;
   }
 }
+
+
+
+const SimpleMembership = function(name) {
+  this.name = name;
+  this.cost = '$5';
+}
+
+const StandardMembership = function (name) {
+  this.name = name;
+  this.cost = '$15';
+}
+
+const SuperMembership = function (name) {
+  this.name = name;
+  this.cost = '$25';
+}
