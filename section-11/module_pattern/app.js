@@ -103,5 +103,13 @@ function MemberFactory() {
     } else if (type === 'super') {
       member = new SuperMembership();
     }
+
+    member.type = type;
+
+    member.define = function() {
+      console.log(`${this.name} (${this.type}): ${this.cost}`);
+    }
+
+    return member;
   }
 }
