@@ -95,5 +95,13 @@ console.log(instanceA === instanceB);
 function MemberFactory() {
   this.createMember = function(name, type) {
     let member;
+
+    if(type === 'simple') {
+      member = new SimpleMembership();      
+    } else if (type === 'standard') {
+      member = new StandardMembership();  
+    } else if (type === 'super') {
+      member = new SuperMembership();
+    }
   }
 }
