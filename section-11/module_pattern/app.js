@@ -143,3 +143,5 @@ members.push(factory.createMember('Skipper Doody', 'standard'));
 members.forEach(function(member) {
   member.define();
 });
+
+
