@@ -4,11 +4,11 @@ const User = function(name) {
 }
 
 User.prototype =  {
-  send: function() {
-    
+  send: function(message, to) {
+    this.chatroom.send(message, this, to);
   },
-  recieve: function() {
-
+  recieve: function(message, from) {
+    console.log();
   }
 }
 
