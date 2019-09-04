@@ -38,3 +38,5 @@ const Chatroom = function() {
 
 
 const derek = new User('Derek');
+const jeff = new User('Jeff');
+const sarah = new User('Sarah');
