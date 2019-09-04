@@ -12,6 +12,8 @@ User.prototype =  {
   }
 }
 
+
+
 const Chatroom = function() {
     let users = {}; // list of users
 
@@ -37,6 +39,19 @@ const Chatroom = function() {
 }
 
 
+
 const derek = new User('Derek');
 const jeff = new User('Jeff');
 const sarah = new User('Sarah');
+
+const chatroom = new Chatroom();
+
+chatroom.register(derek);
+chatroom.register(jeff);
+chatroom.register(sarah);
+
+derek.send('Hello, Jeff', jeff);
+sarah.send('Hello Derek, how are you?', derek);
+jeff.send('Hello Everyone!!!!');
+
+
