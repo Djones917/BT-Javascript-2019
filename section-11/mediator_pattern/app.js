@@ -14,4 +14,27 @@ User.prototype =  {
 
 const Chatroom = function() {
     let users = {}; // list of users
+
+    return {
+      register: function(user) {
+        users[user.name] = user;
+        user.chatroom = this;
+      },
+      send: function(message, from, to) {
+        if(to) {
+          // Single user message
+          to.recieve(message, from);
+        } else {
+          // Mass message
+          for(key in users) {
+            if(users[key] !== from) {
+              users[key].recieve(message, from);
+            }
+          }
+        }
+      }
+    }
 }
+
+
+const derek = new User('Derek');
