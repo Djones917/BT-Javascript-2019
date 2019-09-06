@@ -1,3 +1,4 @@
+// Meadiator Pattern
 const User = function(name) {
   this.name = name;
   this.chatroom = null;
