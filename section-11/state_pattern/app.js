@@ -12,3 +12,8 @@ const PageState = function() {
 
 
 
+// Home State
+
+const homeState = function() {
+    
+}
