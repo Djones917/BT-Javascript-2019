@@ -5,8 +5,10 @@ const PageState = function() {
         this.change(new homeState);
     }
 
-    this.change = function() {
+    this.change = function(state) {
         currentState = state;
     }
-}
+};
+
+
 
