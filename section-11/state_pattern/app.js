@@ -23,5 +23,12 @@ const homeState = function() {
       </div>
       </div>
     `;
+};
+
+
+
+// About State
+const aboutState = function() {
+    
 }
 
