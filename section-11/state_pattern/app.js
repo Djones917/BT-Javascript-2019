@@ -28,7 +28,10 @@ const homeState = function() {
 
 
 // About State
-const aboutState = function() {
-    
+const aboutState = function(page) {
+  document.querySelector('#heading').textContent = 'About Us';
+  document.querySelector('#content').innerHTML = `
+    <p>This is the about page.</p>
+  `;
 }
 
