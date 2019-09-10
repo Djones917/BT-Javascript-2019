@@ -67,3 +67,8 @@ const page = new PageState();
 
 // Init the first state
 page.init();
+
+// UI Vars
+const home = document.getElementById('home'),
+      about = document.getElementById('about'),
+      contact = document.getElementById('contact');
