@@ -60,3 +60,10 @@ const contactState = function (page) {
   `;
 };
 
+
+
+// Instantiate Page State
+const page = new PageState();
+
+// Init the first state
+page.init();
