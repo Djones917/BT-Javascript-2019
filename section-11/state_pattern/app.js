@@ -72,3 +72,11 @@ page.init();
 const home = document.getElementById('home'),
       about = document.getElementById('about'),
       contact = document.getElementById('contact');
+
+
+// Home
+home.addEventListener('click', (e) => {
+  page.change(new homeState);
+
+  e.preventDefault();
+});
